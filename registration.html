@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>index.html</title>
+	<link rel="stylesheet" style="text/case" href="style.css">
+</head>
+<body><a href="index.html"><img src="logo.png"style="float: left"></a><br><br>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<div class="dropdown">
+			<button class="dropbtn">Products</button>
+			<div class="dropdown-content">
+				<a href="fashion.html">Fashion</a>
+				<a href="furniture.html">Furniture</a>
+				<a href="kitchen ware.html">Kitchen ware</a>
+				<a href="electronics.html">Electronics</a></div></div>
+				<li><a href="registration.html">Registration</a></li>
+	<li><a href="contact.html">Contact us</a></li>
+		<li><a href="About us.html">About us</a></li>
+	</ul><br><br><br>
+	<div class="col-2">
+	<div class="form-container">
+		<div class="form-btn">
+	<span onclick="login()">Login</span>
+	<span onclick="register()">Registration</span>
+			<hr id="Indicator">
+	</div>
+	<form id="Loginform">
+		<input type="text" name="" placeholder="Username" size="30"><br><br>
+		<input type="password" placeholder="Password" size="30"><br><br>
+		<button type="submit" class="btn" >Login </button><br><br>
+		<a href="#" target="new"><h4>Forget your password?</h4></a><br>
+	</form><br><br>
+		<form id="Regform">
+		<input type="text"  placeholder="Username" size="30"><br><br>
+		<input type="email"  placeholder="email" size="30"><br><br>
+			<input type="password" placeholder="password" size="30"><br><br>
+		<button type="submit" class="btn">Register</button><br><br>
+			<a><h4>Already have an account?</h4></a><br><br>
+	</form></div></div>
+		<script>
+			var Loginform= document.getElementById("Loginform");
+			var Regform= document.getElementById("Regform");
+			var Indicator= document.getElementById("Indicator");
+			function register(){
+				Regform.style.transform="translateX(0px)";
+				Loginform.style.transform="translate(0px)";
+			    Indicator.style.transform="translate(100px)";}
+			function login(){
+				Regform.style.transform="translateX(300px)";	
+				Loginform.style.transform="translate(300px)";
+			    Indicator.style.transform="translate(0px)";}
+
+			</script>
+</body>
+</html>
+
